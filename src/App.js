@@ -116,7 +116,7 @@ displayFaceBox = (box) => {
 
   onButtonSubmit = (e) => {
     this.setState({ imageUrl: this.state.input });
-      fetch('https://vast-forest-32988.herokuapp.com/image', {
+      fetch('https://vast-forest-32988.herokuapp.com/imageurl', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
